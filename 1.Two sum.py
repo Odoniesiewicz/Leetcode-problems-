@@ -5,13 +5,11 @@
 ##You can return the answer in any order.
 
 
-class Solution(object):
-    def twoSum(self, nums, target):
-        found=False
-        for i in range(len(nums)):
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        found = False
+        for i in range(0,len(nums)):
             for j in range(i+1,len(nums)):
-                if nums[i]+nums[j]==target and not found :
-                    return(i,j)
-                    found=True
-Sol=Solution()
-Sol.twoSum([3,3],6)
+                if (nums[i] + nums[j] == target) and not found:
+                    found = True
+                    return (i,j)
