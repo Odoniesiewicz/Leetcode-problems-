@@ -4,8 +4,7 @@ def isPalindrome(s: str) -> bool:
         for i in s:
             if i.isnumeric() or i.isalpha():
                 cleaned+=i
-        print(cleaned[::-1])
         return cleaned[::-1]==cleaned
 
         
-print(isPalindrome("AB!!!A{)_A'A"))
+print(isPalindrome("A!!!A{)_A'A"))
